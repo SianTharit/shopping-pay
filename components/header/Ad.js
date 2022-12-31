@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Ad() {
   return (
-    <Link href="/browse">
+    <Link href="/browse" legacyBehavior>
       <div className={style.ad}></div>
     </Link>
   );
