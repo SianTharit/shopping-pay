@@ -5,7 +5,7 @@ import Payment from "./Payment";
 import Socials from "./Socials";
 import style from "./styles.module.scss";
 
-function Footer() {
+function Footer({ country }) {
   return (
     <footer className={style.footer}>
       <div className={style.footer__container}>
@@ -13,7 +13,7 @@ function Footer() {
         <Socials />
         <NewsLetter />
         <Payment />
-        <Copyright />
+        <Copyright country={country} />
       </div>
     </footer>
   );
